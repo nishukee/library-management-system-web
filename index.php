@@ -12,8 +12,7 @@ include_once 'php/config.php';
         <title>Login Page</title>
     </head>
     <body>
-        <div class="admin-login">
-            
+        <div class="admin-login"> 
             <h1 class="title"><i class="bi bi-book-fill"></i><br>Admin Sign In</h1>
         </div>
         <form method="post">
