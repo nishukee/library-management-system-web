@@ -12,7 +12,7 @@ include_once 'php/config.php';
     </head>
     <body>
         <div class="admin-login"> 
-            <h1 class="title"><i class="bi bi-book-fill"></i><br>Admin Sign In</h1>
+            <h1 class="title"><img src="icons/book-half.svg" width="75" height="75"><br>Admin Sign In</h1>
         </div>
         <form method="post">
             <div class="login-box">

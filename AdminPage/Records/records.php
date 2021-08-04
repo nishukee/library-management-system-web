@@ -9,6 +9,11 @@ include_once 'php/connect.php';
         <link rel="stylesheet" href="../../css/bootstrap.css">  
         <script type="text/javascript" src="js/download_excel.js"></script>
         <style>
+            @font-face {
+                font-family: 'bootstrap_cons';
+                src: url('../../fonts/bootstrap-icons.woff') format('woff');
+            }
+
             a { text-decoration: none;}
         </style>
         <title>AdminPage</title>
@@ -17,9 +22,8 @@ include_once 'php/connect.php';
         <header id="header">
            <div class="navbar bg-dark navbar-dark">
                <div class="container-fluid">
-                    <a class="navbar-brand" href=#>
-                        <i class="bi bi-book-fill"></i>    
-                        Library
+                    <a class="navbar-brand" href="../adminpage.php">   
+                        <img src="../../icons/book.svg" width="40" height="40" alt=""> Library
                     </a>
                     <a href="../../index.php" class="btn btn-primary" role="button">Sign-Out</a>
                 </div>
@@ -44,7 +48,7 @@ include_once 'php/connect.php';
                 </ul>
             </div>
             <div class="d-flex p-3 justify-content-end">   
-                <button type='button' class='btn btn-secondary' onClick="exportData()"><i class="bi bi-download"></i> Download Table</button>
+                <button type='button' class='btn btn-secondary' onClick="exportData()"><img src="../../icons/download.svg" width="25" height="25"> Download Table</button>
             </div>
             <div class="container-fluid table-responsive">
                 <table class="table table-striped caption-top" id="records_table">

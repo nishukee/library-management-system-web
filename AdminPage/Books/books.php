@@ -14,6 +14,13 @@ if(empty($_SESSION['adminname'])){
         <link rel="stylesheet" href="../../css/bootstrap.css">       
         <script type="text/javascript" src="js/download_excel.js"></script>
         <style>
+            @import '~/bootstrap-icons/font/bootstrap-icons';
+            @font-face {
+                font-family: 'bootstrap_icons';
+                src: url("../../icons/fonts/bootstrap-icons.woff") format("woff"),
+                url("../../icons/fonts/bootstrap-icons.woff2") format("woff2");
+            }
+
             a { text-decoration: none;}
         </style>
         <title>AdminPage</title>
@@ -22,8 +29,8 @@ if(empty($_SESSION['adminname'])){
         <header id="header">
            <div class="navbar bg-dark navbar-dark">
                <div class="container-fluid">
-                    <a class="navbar-brand" href=#>   
-                        <i class="bi bi-book-fill"></i> Library
+                    <a class="navbar-brand" href="../adminpage.php">   
+                        <img src="../../icons/book.svg" width="40" height="40" alt=""> Library
                     </a>
                     <a href="../../index.php" class="btn btn-primary" role="button">Sign-Out</a>
                 </div>
@@ -49,8 +56,8 @@ if(empty($_SESSION['adminname'])){
             </div>
             <div class="container-fluid py-3">
                 <div class="d-flex justify-content-between">   
-                    <button type='button' class='btn btn-success' data-bs-toggle='modal' data-bs-target='#addBook'><i class="bi bi-plus-square"></i> Add Book</button>
-                    <button type='button' class='btn btn-secondary' onClick="exportData()"><i class="bi bi-download"></i> Download Table</button>
+                    <button type='button' class='btn btn-success' data-bs-toggle='modal' data-bs-target='#addBook'><img src="../../icons/plus-square.svg" width="25" height="25" alt=""> Add Book</button>
+                    <button type='button' class='btn btn-secondary' onClick="exportData()"><img src="../../icons/download.svg" width="25" height="25" alt=""> Download Table</button>
                 </div>
             </div>
             <div class="container-fluid table-responsive">
@@ -112,8 +119,8 @@ if(empty($_SESSION['adminname'])){
                                 <?php echo $status; ?>
                             </td>
                             <td>
-                                <button type='button' class='btn btn-warning btn-md' data-bs-toggle='modal' data-bs-target='#edit<?php echo $id;?>'><i class='bi bi-pencil-square'></i></button>
-                                <button type='button' class='btn btn-danger btn-md' data-bs-toggle='modal' data-bs-target='#delete<?php echo $id;?>'><i class='bi bi-trash'></i></button>
+                                <button type='button' class='btn btn-warning btn-md' data-bs-toggle='modal' data-bs-target='#edit<?php echo $id;?>'><img src='../../icons/pencil-square.svg'></button>
+                                <button type='button' class='btn btn-danger btn-md' data-bs-toggle='modal' data-bs-target='#delete<?php echo $id;?>'><img src='../../icons/trash.svg'></button>
                             </td>
                             <div id="edit<?php echo $id;?>" class="modal fade" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-xl">

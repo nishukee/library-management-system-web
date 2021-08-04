@@ -1,3 +1,14 @@
+
+@font-face {
+    font-family: 'bootstrap_cons';
+    src: url('../fonts/bootstrap-icons.woff') format('woff');
+}
+
+a { 
+    text-decoration: none;
+}
+
+
 body {
     margin: 0;
     padding: 0;

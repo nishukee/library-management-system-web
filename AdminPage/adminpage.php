@@ -14,7 +14,7 @@
            <div class="navbar bg-dark navbar-dark">
                <div class="container-fluid">
                     <a class="navbar-brand" href=#>
-                        <i class="bi bi-book-fill"></i>    
+                        <img src="../icons/book.svg" width="40" height="40" alt="">   
                         Library
                     </a>
                     <a href="../index.php" class="btn btn-primary" role="button">Sign-Out</a>
