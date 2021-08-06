@@ -26,7 +26,7 @@ function exportData(){
     var enodedUri = encodeURI(csvContent);
     var link = document.createElement("a");
     link.setAttribute("href",enodedUri);
-    link.setAttribute("download", "Issued_Books_Table.csv");
+    link.setAttribute("download", "Issued_Books.csv");
     document.body.appendChild(link);
     link.click();
 }

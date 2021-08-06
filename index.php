@@ -8,6 +8,13 @@ include_once 'php/config.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
+        <script type="text/javascript"> 
+            function preventBack() {
+                window.history.forward(); 
+            }
+            setTimeout("preventBack()", 0);
+            window.onunload = function () { null };
+        </script>
         <title>Login Page</title>
     </head>
     <body>
@@ -40,11 +47,12 @@ include_once 'php/config.php';
                     $row = $result->fetch_assoc();
                     $count = $row['countAdmin'];
                     if($count > 0){
-                        echo "<script language='javascript'>locatio1n.href = 'AdminPage/adminpage.php';</script>";
+                        $_SESSION['adminname'] = $adminname;
+                        echo "<script language='javascript'>location.replace('AdminPage/adminpage.php');</script>";
                     }
                     else{
                         echo "<script language='javascript'>alert('Incorrect Login Credentials');</script>";
-                        echo "<script language='javascript'>location.href = 'index.php';</script>";
+                        echo "<script language='javascript'>location.replace('index.php');</script>";
                     }
                 }
 

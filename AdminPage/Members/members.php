@@ -1,9 +1,5 @@
 <?php
 include_once 'php/connect.php';
-$session_username = $_SESSION['adminname'];
-if(empty($_SESSION['adminname'])){
-    header("Location: ../../index.php");
-}
 ?>
 
 <!DOCTYPE html>
