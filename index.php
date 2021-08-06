@@ -18,11 +18,11 @@ include_once 'php/config.php';
             <div class="login-box">
                 <div class="textbox">
                     Admin Name<br/>
-                    <input type="text" name="adminname" value="" autocomplete="off"/>
+                    <input type="text" name="adminname" value="" autocomplete="off" required>
                 </div>
                 <div class="textbox">
                     Password<br/>
-                    <input type="password" name="password" value=""/>
+                    <input type="password" name="password" value="" required>
                 </div>
                 <input class="button" type="submit" name="login" value="Sign In">                  
             </div>
@@ -40,8 +40,7 @@ include_once 'php/config.php';
                     $row = $result->fetch_assoc();
                     $count = $row['countAdmin'];
                     if($count > 0){
-                        $_SESSION['adminname'] = $adminname;
-                        echo "<script language='javascript'>location.href = 'AdminPage/adminpage.php';</script>";
+                        echo "<script language='javascript'>locatio1n.href = 'AdminPage/adminpage.php';</script>";
                     }
                     else{
                         echo "<script language='javascript'>alert('Incorrect Login Credentials');</script>";
