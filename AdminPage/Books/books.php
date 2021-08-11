@@ -274,7 +274,7 @@ include_once 'php/connect.php';
                                     echo "<script language='javascript'>location.href = 'books.php';</script>";
                                 }
                                 else{
-                                    echo "<script language='javascript'>alert('Could not enter data.\n Check if databse exists with table in server.');</script>";
+                                    echo "<script language='javascript'>alert('Could not enter data.\n Check if database exists with table in server.');</script>";
                                     echo "<script language='javascript'>location.href = 'books.php';</script>";
                                 }
                             }
@@ -298,7 +298,7 @@ include_once 'php/connect.php';
                                     echo "<script language='javascript'>location.href = 'books.php';</script>";
                                 }
                                 else{
-                                    echo "<script language='javascript'>alert('Could not update data.\n Check if databse exists with table in server.');</script>";
+                                    echo "<script language='javascript'>alert('Could not update data.\n Check if database exists with table in server.');</script>";
                                     echo "<script language='javascript'>location.href = 'books.php';</script>";
                                 }
                             }
@@ -314,7 +314,7 @@ include_once 'php/connect.php';
                                     echo "<script language='javascript'>location.href = 'books.php';</script>";
                                 }
                                 else{
-                                    echo "<script language='javascript'>alert('Could not delete data.\n Check if databse exists with table in server.');</script>";
+                                    echo "<script language='javascript'>alert('Could not delete data.\n Check if database exists with table in server.');</script>";
                                     echo "<script language='javascript'>location.href = 'books.php';</script>";
                                 }
                             }
