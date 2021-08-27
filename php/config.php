@@ -1,5 +1,4 @@
 <?php
-session_start();
 $DB_HOST = 'localhost';
 $DB_NAME = 'library';
 $DB_USERNAME = 'root';

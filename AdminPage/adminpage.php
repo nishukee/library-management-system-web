@@ -26,13 +26,13 @@
             <div class="container-fluid">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link" href="Issue_Return/issue_return.php">Issue/Return</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="Books/books.php">Books</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Members/members.php">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Issue_Return/issue_return.php">Issue/Return</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Records/records.php">Records</a>

@@ -30,13 +30,13 @@ include_once 'php/connect.php';
             <div class="container-fluid">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link" href="../Issue_Return/issue_return.php">Issue/Return</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="../Books/books.php">Books</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Issue_Return/issue_return.php">Issue/Return</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Records/records.php">Records</a>
@@ -243,7 +243,7 @@ include_once 'php/connect.php';
                                     </div>
                                     <div class="mb-3">
                                         <label for="emailId" class="form-label">Email</label>
-                                        <input type="text" name="emailId" class="form-control" id="emailId">
+                                        <input type="email" name="emailId" class="form-control" id="emailId">
                                     </div>
                                     <div class="mb-3">
                                         <label for="address" class="form-label">Address</label>
