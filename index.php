@@ -24,7 +24,7 @@ include_once 'php/config.php';
         <form method="post">
             <div class="login-box">
                 <div class="textbox">
-                    Admin Name<br/>
+                    User Name<br/>
                     <input type="text" name="adminname" value="" autocomplete="off" required>
                 </div>
                 <div class="textbox">
